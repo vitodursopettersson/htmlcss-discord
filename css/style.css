@@ -1,122 +1,4 @@
 /* 
-+++++++++++++++
-Debug
-+++++++++++++++
-*/
-
-/* Debug Border */
-
-.debug header>*>* {
-    border: black dashed 1px;
-}
-
-.debug .container:empty {
-    border: black dashed 1px;
-}
-
-.debug main section>*>* {
-    border: black dashed 1px;
-}
-
-.debug footer section>*>* {
-    border: black dashed 1px;
-}
-
-/* Debug Header */
-
-.debug header {
-    background-color: #ADD8E6;
-}
-
-.debug header .container>* {
-    padding: 8px;
-    background-color: #DAA520;
-}
-
-/* Debug Above */
-
-.debug .above {
-    background-color: #18008B;
-}
-
-.debug .above .container {
-    background-color: #EE82EE;
-}
-
-.debug main .above .container {
-    height: 300px;
-}
-
-
-/* Debug Main Section */
-
-.debug main .container {
-    height: 400px;
-}
-
-.debug main section:nth-child(2n + 3) {
-    background-color: #D3D3D3;
-}
-
-.debug main>section:last-child .container {
-    height: 600px;
-}
-
-/* Debug Column */
-
-.debug .big-collumn {
-    background-color: #3790FF;
-}
-
-.debug .small-collumn {
-    background-color: #FDC0CB;
-}
-
-.debug .fullwidth-column {
-    background-color: #228B22;
-}
-
-/* Debug Footer */
-
-.debug footer section {
-    background-color: #23272A;
-}
-
-.debug footer .container {
-    height: 500px;
-}
-
-.debug footer .big-collumn {
-    background-color: #F08080;
-}
-
-.debug footer .small-collumn {
-    background-color: #26B2AA;
-}
-
-.debug footer .group-small-collumn>* {
-    border: #ffffff dashed 1px;
-}
-
-.debug section.footer {
-    border-top: #ffffff solid 1px;
-}
-
-.debug section.footer .container {
-    background-color: #7CF7CF;
-    height: 60px;
-}
-
-.debug section.footer .container>* {
-    background-color: #F2ADB9;
-    padding: 5px;
-}
-
-
-
-
-
-/* 
 ***************
 Reset Default
 ***************
@@ -128,10 +10,6 @@ Reset Default
     box-sizing: border-box;
 }
 
-
-
-
-
 /* 
 ***************
 Design System
@@ -139,7 +17,7 @@ Design System
 */
 
 body {
-    font-family: Helvetica, sans-serif, sans-serif;
+    font-family: Roboto, sans-serif, sans-serif;
     font-weight: 400;
     font-size: 14px;
 }
@@ -148,17 +26,98 @@ section {
     padding: 34px 0px;
 }
 
-footer section {
-    padding-top: 20px;
+.top-header {
+    width: 1000px;
+    margin: 0 auto;
 }
 
 .container {
     width: 1000px;
     margin: 0 auto;
     display: flex;
+    padding: 120px 24px;
 }
 
+.container-fullwidth {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 120px 24px;
+}
 
+button {
+    background-color: #ffffff;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 24px;
+    font-size: 18px;
+}
+
+button.alt {
+    background-color: #23272A;
+    color: #ffffff;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 24px;
+    font-size: 18px;
+}
+
+.login button {
+    padding: 10px 14px;
+    color: #404EED;
+    font-size: 14px;
+}
+
+footer button {
+    background-color: #7289DA;
+    padding: 10px 14px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.cta button {
+    background-color: #7289DA;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 58px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 58px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    margin-bottom: 40px;
+}
+
+h5 {
+    color: #7289DA;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
 
 /* 
 ---------------
@@ -167,28 +126,58 @@ Header
 */
 
 header {
-    padding: 10px 0px;
+    padding-top: 20px;
+    color: #ffffff;
+    background-color: #315EE9;
+}
+
+.top-header {
+    display: flex;
+    align-items: center;
 }
 
 .brand {
     width: 20%;
 }
 
+.brand img {
+    width: 100px;
+}
+
 nav {
     width: 60%;
-    text-align: center;
+    justify-content: center;
 }
 
 .menu {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
 }
 
 .login {
     width: 20%;
-    text-align: end;
+    justify-content: flex-end;
+}
+
+/* Above */
+
+.above {
+    background-color: #315EE9;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.above .container {
+    width: 800px;
+    text-align: center;
+}
+
+.group-button :first-child {
+    margin-right: 20px;
 }
 
 
@@ -201,10 +190,21 @@ Main
 ---------------
 */
 
-/* Above */
+main section:nth-child(2n + 2) {
+    background-color: #F6F6F6;
+}
 
-.above .container {
-    width: 800px;
+main img {
+    width: 100%;
+}
+
+.cta {
+    width: 65%;
+    padding: 40px 0px;
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 /* Container Collumn */
@@ -217,25 +217,66 @@ Main
     width: 40%;
 }
 
-.fullwidth-column {
-    width: 100%;
-}
-
 /* 
 ---------------
 Footer
 ---------------
 */
 
+.lang {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.lang p {
+    font-size: 12px;
+    margin: 0px;
+}
+
+.lang img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.social {
+    padding: 10px 0px;
+    display: flex;
+    gap: 20px;
+}
+
+
 /* Menu Footer */
 
-footer .big-collumn {
-    width: 25%;
+footer {
+    background-color: #23272A;
+}
+
+footer .small-collumn {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .small-collumn h6 {
+    color: #7289DA;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer .small-collumn a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0px;
+}
+
+footer .footer-column {
+    width: 35%;
+    padding-right: 40px;
 }
 
 footer .group-small-collumn {
     display: flex;
-    width: 75%;
+    width: 65%;
 }
 
 footer .small-collumn {
@@ -244,6 +285,8 @@ footer .small-collumn {
 
 /* Footer */
 
+
+
 section.footer {
     padding: 20px 0px 0px
 }
@@ -251,4 +294,17 @@ section.footer {
 section.footer .container {
     justify-content: space-between;
     align-items: center;
+}
+
+footer section {
+    padding-top: 20px;
+}
+
+footer section:first-child .container {
+    padding-bottom: 0px;
+}
+
+.footer-line {
+    border-top: 1px solid #7289DA;
+    padding: 20px 0px 40px;
 }
