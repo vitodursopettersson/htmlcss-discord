@@ -1,46 +1,4 @@
 /* 
-***************
-Reset Default
-***************
-*/
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-
-
-
-/* 
-***************
-Design System
-***************
-*/
-
-body {
-    font-family: Helvetica, sans-serif, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-}
-
-section {
-    padding: 34px 0px;
-}
-
-footer section {
-    padding-top: 20px;
-}
-
-.container {
-    width: 1000px;
-    margin: 0 auto;
-    display: flex;
-}
-
-/* 
 +++++++++++++++
 Debug
 +++++++++++++++
@@ -153,6 +111,54 @@ Debug
     background-color: #F2ADB9;
     padding: 5px;
 }
+
+
+
+
+
+/* 
+***************
+Reset Default
+***************
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* 
+***************
+Design System
+***************
+*/
+
+body {
+    font-family: Helvetica, sans-serif, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+section {
+    padding: 34px 0px;
+}
+
+footer section {
+    padding-top: 20px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+
 
 /* 
 ---------------
