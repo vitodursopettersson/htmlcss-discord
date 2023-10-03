@@ -1,0 +1,248 @@
+/* 
+***************
+Reset Default
+***************
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* 
+***************
+Design System
+***************
+*/
+
+body {
+    font-family: Helvetica, sans-serif, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+section {
+    padding: 34px 0px;
+}
+
+footer section {
+    padding-top: 20px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* 
++++++++++++++++
+Debug
++++++++++++++++
+*/
+
+/* Debug Border */
+
+.debug header>*>* {
+    border: black dashed 1px;
+}
+
+.debug .container:empty {
+    border: black dashed 1px;
+}
+
+.debug main section>*>* {
+    border: black dashed 1px;
+}
+
+.debug footer section>*>* {
+    border: black dashed 1px;
+}
+
+/* Debug Header */
+
+.debug header {
+    background-color: #ADD8E6;
+}
+
+.debug header .container>* {
+    padding: 8px;
+    background-color: #DAA520;
+}
+
+/* Debug Above */
+
+.debug .above {
+    background-color: #18008B;
+}
+
+.debug .above .container {
+    background-color: #EE82EE;
+}
+
+.debug main .above .container {
+    height: 300px;
+}
+
+
+/* Debug Main Section */
+
+.debug main .container {
+    height: 400px;
+}
+
+.debug main section:nth-child(2n + 3) {
+    background-color: #D3D3D3;
+}
+
+.debug main>section:last-child .container {
+    height: 600px;
+}
+
+/* Debug Column */
+
+.debug .big-collumn {
+    background-color: #3790FF;
+}
+
+.debug .small-collumn {
+    background-color: #FDC0CB;
+}
+
+.debug .fullwidth-column {
+    background-color: #228B22;
+}
+
+/* Debug Footer */
+
+.debug footer section {
+    background-color: #23272A;
+}
+
+.debug footer .container {
+    height: 500px;
+}
+
+.debug footer .big-collumn {
+    background-color: #F08080;
+}
+
+.debug footer .small-collumn {
+    background-color: #26B2AA;
+}
+
+.debug footer .group-small-collumn>* {
+    border: #ffffff dashed 1px;
+}
+
+.debug section.footer {
+    border-top: #ffffff solid 1px;
+}
+
+.debug section.footer .container {
+    background-color: #7CF7CF;
+    height: 60px;
+}
+
+.debug section.footer .container>* {
+    background-color: #F2ADB9;
+    padding: 5px;
+}
+
+/* 
+---------------
+Header
+---------------
+*/
+
+header {
+    padding: 10px 0px;
+}
+
+.brand {
+    width: 20%;
+}
+
+nav {
+    width: 60%;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.login {
+    width: 20%;
+    text-align: end;
+}
+
+
+
+
+
+/* 
+---------------
+Main
+---------------
+*/
+
+/* Above */
+
+.above .container {
+    width: 800px;
+}
+
+/* Container Collumn */
+
+.big-collumn {
+    width: 60%;
+}
+
+.small-collumn {
+    width: 40%;
+}
+
+.fullwidth-column {
+    width: 100%;
+}
+
+/* 
+---------------
+Footer
+---------------
+*/
+
+/* Menu Footer */
+
+footer .big-collumn {
+    width: 25%;
+}
+
+footer .group-small-collumn {
+    display: flex;
+    width: 75%;
+}
+
+footer .small-collumn {
+    width: calc(100%/4);
+}
+
+/* Footer */
+
+section.footer {
+    padding: 20px 0px 0px
+}
+
+section.footer .container {
+    justify-content: space-between;
+    align-items: center;
+}
